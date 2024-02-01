@@ -1,0 +1,159 @@
+.container{
+    display: grid;
+    background-color: lightblue;
+    height:100vh;
+    width: 100vw;
+grid-template-columns: repeat(5, 20vw);
+grid-template-rows: repeat(5,20vh);
+}
+
+
+.sidebar{
+    background-color: #e63946;
+    grid-row-start: span 5;
+}
+.serach-icon{
+    margin-top: -40px;
+}
+
+.search-box{
+    padding: none;
+    heigth:20px;
+    padding-block: none;
+}
+.navbar{
+    background-color: #f1faee;
+    grid-column: 2/6;
+    flex-shrink: 0;
+    display: flex;
+    justify-content:space-between;
+    padding-top:10px;
+    padding-left: 40px; /* Space on the left end */
+    padding-right: 40px; 
+}
+
+.serach-icon{
+    vertical-align: -20px;
+}
+.left-navbar{
+    gap: 20px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.right-navbar{
+    display: flex;
+    gap: 20px;
+}
+
+
+.main-content{
+    background-color: #a8dadc;
+    grid-row: 2 / span 4;
+    grid-column: 2 / span 4;
+}
+
+.dashboard{
+     margin-left: 5vw;
+     color: #f1faee;
+     
+     display: inline-block;
+     font-size:x-large;
+}
+
+.dashboard-icon{
+    vertical-align:-10px;
+}
+button{
+    background-color:#e63946;
+    border:none;
+}
+.Header{
+    display: grid;
+    row-gap: 4px;
+    grid-template-rows: repeat(20,5vh);
+}
+
+.settings{
+    grid-row-start: 10;
+}
+.support{
+    grid-row-start:11;
+}
+.privacy{
+    grid-row-start: 12;
+}
+
+
+
+.grid-item{
+    font-size: larger;
+    color:#f1faee;
+}
+
+
+
+.form__group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .form__field {
+    width: 100%;
+    padding:0.25rem;
+    background: transparent; /* Set the background to transparent */
+    border: 2px solid #3498db; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    color: #3498db; /* Text color */
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+
+  .form__field:focus {
+    outline: none;
+    border-color: #ff6b6b; /* Change border color when focused */
+  }
+
+  .form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form__field:focus + .form__label,
+  .form__field:not(:placeholder-shown) + .form__label {
+    top: -1rem;
+    left: 0;
+    font-size: 0.8rem;
+    background: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    color: #3498db;
+  }
+
+
+
+.main-content{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.left-header{
+   height: 40px;
+   width: auto;
+   padding-left: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.project{
+    height:20vh;
+    width: 20vw;
+}
